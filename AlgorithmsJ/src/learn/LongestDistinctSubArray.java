@@ -2,7 +2,7 @@ package algo;
 
 import java.util.HashMap;
 
-class Solution {
+class LongestDistinctSubArray {
   /*
     input= "abcabcd"
     output= 4 (abcd)
