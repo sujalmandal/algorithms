@@ -19,11 +19,6 @@ public class SmallestSubarrayWithElementsSumGreaterThanGivenSum {
                 right++;
             }//we have matched the criteria
             else {
-                //is this the smallest sub array?
-                if(bestSubArrSize>right-left){
-                    bestSubArrSize = right-left;
-                    bestLeft=left;
-                }
                 //we run this loop until we violate the condition - the subarray sum becomes lower than the given sum
                 //the above loop will start growing the right pointer and the subarray once that happens
                 while (pointersDidNotReachEndOfArray(arr, left, right) && currentRunningSum>=givenSum){
