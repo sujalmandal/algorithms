@@ -17,7 +17,7 @@ public class BinarySearchVariations {
 		int i=0;
 		while(start<=last) {
 			mid=getMidIndex(start,last);
-			delayAndPrint("count: "+i+++" start: "+start+" last: "+last+" mid: "+mid+" element: "+arr[mid]);
+			//delayAndPrint("count: "+i+++" start: "+start+" last: "+last+" mid: "+mid+" element: "+arr[mid]);
 			//peak found
 			if(isPeak(arr,mid)) {
 				return arr[mid];
@@ -33,6 +33,10 @@ public class BinarySearchVariations {
 		}
 		System.out.println("largest element: "+arr[mid]);
 		return 0;
+	}
+
+	public static int getMidIndex(int r, int l){
+		return l+((l-r)/2);
 	}
 
 	public static boolean isPeak(int[] arr,int mid) {
