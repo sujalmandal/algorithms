@@ -56,7 +56,8 @@ public class PermutationGenerator {
 				//generate new permutations by combining the current permutation & the last char in every position possible
 				for(int index=0;index<permutationOfAllButLastChar.length()+1;index++) {
 					//generate the permutation
-					String permutation = permutationOfAllButLastChar.substring(0, index)+lastChar+permutationOfAllButLastChar.substring(index,permutationOfAllButLastChar.length());
+					String permutation = permutationOfAllButLastChar
+							.substring(0, index)+lastChar+permutationOfAllButLastChar.substring(index,permutationOfAllButLastChar.length());
 					//add it to the set
 					permutationsAfterAddingLastChar.add(permutation);
 				}
