@@ -4,6 +4,7 @@ public class BNode {
     private int value;
     private BNode left;
     private BNode right;
+    public int depth;
 
     public static BNode of(int val){
         BNode n = new BNode();
