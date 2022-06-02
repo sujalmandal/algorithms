@@ -5,7 +5,7 @@ public class PalindromeDetector {
         String msg = "A man, a plan, a canal: Panama";
         StringBuilder builder = new StringBuilder();
         for(int ch : msg.toCharArray()){
-            if(!Character.isAlphabetic(ch)) continue;
+            if(!Character.isAlphabetic(ch) || !Character.isDigit(ch)) continue;
             ch = Character.toLowerCase(ch);
             builder.append((char)ch);
         }

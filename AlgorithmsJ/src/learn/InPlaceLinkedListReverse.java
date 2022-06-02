@@ -5,7 +5,7 @@ public class InPlaceLinkedListReverse {
         Node head = Node.of(1);
         head.setNext(Node.of(2)).setNext(Node.of(3)).setNext(Node.of(4));
         Node curr = head;
-        printLL(curr);
+        Util.printLL(curr);
 
         curr = head;
         Node prev = null;
@@ -18,13 +18,7 @@ public class InPlaceLinkedListReverse {
             curr = next;
         }
         System.out.println("El reverso");
-        printLL(prev);
+        Util.printLL(prev);
     }
 
-    private static void printLL(Node curr) {
-        while(curr !=null){
-            System.out.println("val: "+ curr.val);
-            curr = curr.next;
-        }
-    }
 }
